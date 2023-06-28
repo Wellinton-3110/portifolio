@@ -1,0 +1,25 @@
+.lightText:hover {
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.749);
+  transition: 0.7s;
+}
+
+.lightLogo:hover {
+  box-shadow: 0.5px 3px 8px rgba(186, 26, 26, 0.822);
+  transition: 0.9s;
+  animation: spinLogo 2.5s linear;
+}
+
+@keyframes spinLogo {
+  0% {
+    transform: rotate(0deg);
+    border: 1.7px solid rgb(239 68 68);
+  }
+  50% {
+    transform: rotate(180deg);
+    border: 1.8px solid rgb(239 68 68);
+  }
+  100% {
+    transform: rotate(360deg);
+    border: 1.9px solid rgb(239 68 68);
+  }
+}
