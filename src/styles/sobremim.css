@@ -1,3 +1,49 @@
 .BgStyle {
   background: linear-gradient(to top, black, black, black, black);
 }
+
+.AnimateImage::before {
+  content: "";
+  width: 90px;
+  height: 300px;
+  background-color: blue;
+  background: linear-gradient(
+    to right,
+    red,
+    rgba(255, 0, 81, 0.652),
+    rgb(255, 0, 140)
+  );
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  z-index: -1;
+  animation: animateImage 2s linear infinite;
+  transform-origin: left top;
+}
+.AnimateImage::after {
+  content: "";
+  width: 90px;
+  height: 300px;
+  background-color: blue;
+  background: linear-gradient(
+    to right,
+    rgb(8, 182, 235),
+    rgba(8, 211, 197, 0.652),
+    rgb(0, 247, 255)
+  );
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  z-index: -1;
+  animation: animateImage 2s linear infinite;
+  transform-origin: left top;
+}
+
+@keyframes animateImage {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
