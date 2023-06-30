@@ -4,7 +4,7 @@
 
 .AnimateImage::before {
   content: "";
-  width: 90px;
+  width: 50px;
   height: 300px;
   background-color: blue;
   background: linear-gradient(
@@ -17,29 +17,52 @@
   top: 45%;
   left: 45%;
   z-index: -1;
-  animation: animateImage 2s linear infinite;
+  animation: animateImage 3.5s linear infinite alternate;
   transform-origin: left top;
 }
 .AnimateImage::after {
   content: "";
-  width: 90px;
+  width: 100px;
   height: 300px;
   background-color: blue;
   background: linear-gradient(
     to right,
-    rgb(8, 182, 235),
-    rgba(8, 211, 197, 0.652),
-    rgb(0, 247, 255)
+    rgb(235, 8, 38),
+    rgba(233, 3, 38, 0.652),
+    rgb(234, 0, 255)
   );
   position: absolute;
   top: 45%;
   left: 45%;
   z-index: -1;
-  animation: animateImage 2s linear infinite;
+  animation: animateImageReverse 3s linear infinite;
   transform-origin: left top;
 }
 
+.reactRotate {
+  animation: reactLogo 3s linear infinite;
+}
+
 @keyframes animateImage {
+  0% {
+    transform: rotate(0deg);
+    width: 50px;
+  }
+  100% {
+    transform: rotate(360deg);
+    width: 100px;
+  }
+}
+@keyframes animateImageReverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes reactLogo {
   0% {
     transform: rotate(0deg);
   }
