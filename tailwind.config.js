@@ -2,6 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      sans: ["ui-sans-serif", "system-ui"],
+      DM: ["DM Sans", "sans-serif"],
+      mono: ["ui-monospace", "SFMono-Regular"],
+    },
     screens: {
       "2xl": { max: "1735px" },
       // => @media (max-width: 1535px) { ... }
