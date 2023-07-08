@@ -73,7 +73,7 @@ export function SobreMim() {
           </div>
         </div>
 
-        <ul className="absolute flex items-center justify-center gap-3 h-10 max-w-[350px] top-[45vh] left-[50%] translate-x-[-50%] border-l-[01px] border-white/10 sm:gap-1 sm:top-[10.7rem] sm:right-[50%]">
+        <ul className="absolute flex items-center justify-center gap-3 p-3 h-10 w-[225px] top-[45vh] left-[50%] translate-x-[-50%] border-l-[2px] border-white/10 sm:gap-1 sm:top-[10.7rem] sm:right-[50%]">
           <l1>
             <BiLogoReact className="reactRotate h-7 w-9 text-blue-400 sm:h-5 sm:w-7" />
           </l1>
