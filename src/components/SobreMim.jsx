@@ -35,7 +35,7 @@ export function SobreMim() {
 
   return (
     <div className="BgStyle relative h-[100vh] w-full z-[-1] top-[9.7vh] flex items-center bg-black">
-      <div className="w-[57vw] h-full text-white flex justify-end">
+      <div className="w-[57vw] h-full bg text-white flex justify-end">
         <article className="h-[60vh] max-w-[950px] flex flex-col items-center justify-center md:h-[70vh] sm:absolute sm:top-[27vh] sm:left-[50%] sm:translate-x-[-50%]">
           <h1
             id="header"
@@ -43,7 +43,7 @@ export function SobreMim() {
           >
             Olá, me chamo Wellinton
           </h1>
-          <h2 className="font-mono font-bold text-[17px] p-5 sm:text-[14px] sm:h-[60vh] w-[57vw]">
+          <h2 className="font-mono font-bold text-[17px] p-5  w-[57vw] sm:text-[14px] sm:h-[60vh] sm:w-[60vw]">
             Desenvolvedor web front-end apaixonado por tecnologia, possuo
             experiência em desenvolvimento utilizando Javascript, React e
             tailwind css. Atualmente, estou iniciando uma nova jornada de
@@ -73,7 +73,7 @@ export function SobreMim() {
           </div>
         </div>
 
-        <ul className="absolute flex items-center justify-center gap-3 p-3 h-10 w-[225px] top-[45vh] left-[50%] translate-x-[-50%] border-l-[2px] border-white/10 sm:gap-1 sm:top-[10.7rem] sm:right-[50%]">
+        <ul className="absolute flex items-center justify-center gap-3 p-3 h-10 w-[331px] top-[45vh] left-[50%] translate-x-[-50%] border-l-[2px] border-white/10 sm:gap-1 sm:top-[11.3rem] sm:right-[50%] md:gap-1 md:w-[290px]">
           <l1>
             <BiLogoReact className="reactRotate h-7 w-9 text-blue-400 sm:h-5 sm:w-7" />
           </l1>
