@@ -30,7 +30,7 @@ export function Projetos() {
   const { componentRef } = useContext(UserRefScroll);
 
   var settings = {
-    autoplay: false,
+    autoplay: true,
     pauseOnHover: true,
     dots: true,
     infinite: true,
@@ -41,9 +41,8 @@ export function Projetos() {
     appendDots: (dots) => (
       <div
         style={{
-          backgroundColor: "#ddd",
-          borderRadius: "px",
-          padding: "5px",
+          background: "#040507",
+          padding: "10px",
         }}
       >
         <ul style={{ margin: "0px" }}> {dots} </ul>
@@ -54,9 +53,9 @@ export function Projetos() {
         style={{
           width: "25px",
           color: "white",
-          background: "black",
+          background: "#9B21E4",
           hover: "blue",
-          border: "2px black solid",
+          border: "1px black solid",
           borderRadius: "4px",
         }}
       >
@@ -67,14 +66,20 @@ export function Projetos() {
   return (
     <div
       ref={componentRef}
-      className="scroll-smooth z-0 projetos w-full h-[100vh] bg-slate-600"
+      className="relative scroll-smooth z-0 projetos w-full h-[100vh] bg-black"
     >
       <div className="">
-        <Slider {...settings}>
+        <h1 className="w-full text-center p-[20px] text-[white] text-[27px]">
+          PROJETOS
+        </h1>
+        <Slider
+          {...settings}
+          className="absolute top-[20%] left-[50vw] translate-x-[-50%] w-[90vw] h-[59vh]"
+        >
           {userData.map((items, index) => {
             if (items) {
               return (
-                <div className="flex items-centerh-[600px] p-5 w-[80vw] bg-black/70">
+                <div className="flex items-centerh-[600px] p-10 w-[80vw] bg-[#040507]">
                   <Card name={items.name} text={items.description} />;
                 </div>
               );

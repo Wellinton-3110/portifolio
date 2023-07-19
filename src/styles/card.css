@@ -1,3 +1,6 @@
 .Card {
-  box-shadow: 3px 5px 9px 7px black;
+  box-shadow: 1px 3px 9px 1px #9b21e4;
+}
+.Card:hover {
+  box-shadow: 1px 3px 9px 4px #9b21e4;
 }
