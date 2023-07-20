@@ -12,10 +12,10 @@ export function Card(props) {
           {props.text}
         </h2>
         <div className=" flex p-7 w-[250px] h-10 items-center justify-around ">
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href={props.url} target="_blank" rel="noopener noreferrer">
             <VscVmRunning className="h-7 w-7 cursor-pointer" />
           </a>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a href={props.githubUrl} target="_blank" rel="noopener noreferrer">
             <VscGithubInverted className="h-7 w-7 cursor-pointer" />
           </a>
         </div>

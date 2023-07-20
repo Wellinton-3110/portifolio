@@ -74,13 +74,19 @@ export function Projetos() {
         </h1>
         <Slider
           {...settings}
-          className="absolute top-[20%] left-[50vw] translate-x-[-50%] w-[90vw] h-[59vh]"
+          className="absolute top-[20%] left-[50vw] translate-x-[-50%] w-[87vw] h-[59vh]"
         >
           {userData.map((items, index) => {
             if (items) {
               return (
                 <div className="flex items-centerh-[600px] p-10 w-[80vw] bg-[#040507]">
-                  <Card name={items.name} text={items.description} />;
+                  <Card
+                    name={items.name}
+                    text={items.description}
+                    url={`https://wellinton-3110.github.io/${items.name}`}
+                    githubUrl={items.html_url}
+                  />
+                  ;
                 </div>
               );
             }
