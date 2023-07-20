@@ -2,10 +2,12 @@ import Slider from "react-slick";
 import { useContext, useEffect } from "react";
 import { UserRefScroll } from "../App";
 import { Card } from "./Card";
+import video from "../assets/projetos/pexels_videos_4562 (1080p).mp4";
 
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "../styles/projetos.css";
 import axios from "axios";
 import { useState } from "react";
 
@@ -30,7 +32,7 @@ export function Projetos() {
   const { componentRef } = useContext(UserRefScroll);
 
   var settings = {
-    autoplay: true,
+    autoplay: false,
     pauseOnHover: true,
     dots: true,
     infinite: true,
@@ -41,7 +43,7 @@ export function Projetos() {
     appendDots: (dots) => (
       <div
         style={{
-          background: "#040507",
+          background: "black",
           padding: "10px",
         }}
       >
@@ -53,7 +55,7 @@ export function Projetos() {
         style={{
           width: "25px",
           color: "white",
-          background: "#9B21E4",
+          background: "#0052ff",
           hover: "blue",
           border: "1px black solid",
           borderRadius: "4px",
@@ -66,26 +68,34 @@ export function Projetos() {
   return (
     <div
       ref={componentRef}
-      className="relative scroll-smooth z-0 projetos w-full h-[100vh] bg-black"
+      className="relative scroll-smooth projetos w-full h-[100vh] bg-black"
     >
       <div className="">
         <h1 className="w-full text-center p-[20px] text-[white] text-[27px]">
           PROJETOS
         </h1>
+
         <Slider
           {...settings}
-          className="absolute top-[20%] left-[50vw] translate-x-[-50%] w-[87vw] h-[59vh]"
+          className="absolute top-[15%] left-[50vw] translate-x-[-50%] w-[81vw] h-[80vh]"
         >
           {userData.map((items, index) => {
             if (items) {
               return (
-                <div className="flex items-centerh-[600px] p-10 w-[80vw] bg-[#040507]">
+                <div className="Projetos relative flex p-10 w-[81vw] h-[80vh]">
                   <Card
                     name={items.name}
                     text={items.description}
                     url={`https://wellinton-3110.github.io/${items.name}`}
                     githubUrl={items.html_url}
                   />
+                  <video
+                    src={video}
+                    loop
+                    autoPlay
+                    muted
+                    className="absolute z-[-1] w-[100vw] h-[100vh] object-cover top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]"
+                  ></video>
                   ;
                 </div>
               );
