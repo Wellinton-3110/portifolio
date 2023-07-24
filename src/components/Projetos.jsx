@@ -71,18 +71,18 @@ export function Projetos() {
       className="relative scroll-smooth projetos w-full h-[100vh] bg-black"
     >
       <div className="">
-        <h1 className="w-full text-center p-[20px] text-[white] text-[27px]">
+        <h1 className="w-full p-[20px] font-bold text-center text-[white] text-[27px]">
           PROJETOS
         </h1>
 
         <Slider
           {...settings}
-          className="absolute top-[15%] left-[50vw] translate-x-[-50%] w-[81vw] h-[80vh]"
+          className="absolute top-[15%] left-[50vw] translate-x-[-50%] w-[81vw] h-[77vh]"
         >
           {userData.map((items, index) => {
             if (items) {
               return (
-                <div className="Projetos relative flex p-10 w-[81vw] h-[80vh]">
+                <div className="Projetos relative flex p-10 w-[77vw] h-[80vh]">
                   <Card
                     name={items.name}
                     text={items.description}
@@ -94,7 +94,7 @@ export function Projetos() {
                     loop
                     autoPlay
                     muted
-                    className="absolute z-[-1] w-[100vw] h-[100vh] object-cover top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]"
+                    className="absolute z-[-1] rounded-[50%] w-[65vw] h-[55vh] object-cover top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]"
                   ></video>
                   ;
                 </div>

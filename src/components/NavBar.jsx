@@ -17,13 +17,22 @@ export function NavBar() {
             alt="logo marca"
           />
         </div>
-        <ul className="absolute right-20 flex gap-5 sm:text-[10px]">
-          <li className="lightText hover:cursor-pointer">Sobre mim</li>
-          <li onClick={scroll} className="lightText hover:cursor-pointer">
+        <ul className="absolute w-[30vw] max-w-[30vw] h-[5vh] flex items-center justify-around right-20 gap-5 sm:text-[10px]">
+          <li className="lightText w-[5vw] text-center hover:cursor-pointer">
+            Sobre mim
+          </li>
+          <li
+            onClick={scroll}
+            className="lightText w-[5vw] text-center hover:cursor-pointer"
+          >
             projetos
           </li>
-          <li className="lightText hover:cursor-pointer">habilidades</li>
-          <li className="lightText hover:cursor-pointer">contato</li>
+          <li className="lightText w-[5vw] text-center hover:cursor-pointer">
+            habilidades
+          </li>
+          <li className="lightText w-[5vw] text-center hover:cursor-pointer">
+            contato
+          </li>
         </ul>
       </nav>
     </>

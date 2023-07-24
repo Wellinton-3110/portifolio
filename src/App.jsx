@@ -3,6 +3,7 @@ import { NavBar } from "./components/NavBar.jsx";
 import { SobreMim } from "./components/SobreMim.jsx";
 import { Projetos } from "./components/Projetos.jsx";
 import "./index.css";
+import { Contatos } from "./components/Contatos.jsx";
 
 export const UserRefScroll = createContext({});
 
@@ -25,6 +26,7 @@ function App() {
         <NavBar />
         <SobreMim />
         <Projetos />
+        <Contatos />
       </UserRefScroll.Provider>
     </div>
   );

@@ -1,4 +1,3 @@
-import video from "../assets/projetos/backvideo.mp4";
 import "../styles/projetos.css";
 
 export function Video() {
