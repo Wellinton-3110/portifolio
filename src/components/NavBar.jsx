@@ -17,20 +17,20 @@ export function NavBar() {
             alt="logo marca"
           />
         </div>
-        <ul className="absolute w-[30vw] max-w-[30vw] h-[5vh] flex items-center justify-around right-20 gap-5 sm:text-[10px]">
-          <li className="lightText w-[5vw] text-center hover:cursor-pointer">
+        <ul className="absolute w-[35vw] max-w-[35vw] h-[5vh] flex items-center justify-around right-20 gap-5">
+          <li className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:w-[8vw] sm:text-[10px] sm:w-[12vw] ">
             Sobre mim
           </li>
           <li
             onClick={scroll}
-            className="lightText w-[5vw] text-center hover:cursor-pointer"
+            className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:w-[8vw] sm:text-[10px] sm:w-[] "
           >
             projetos
           </li>
-          <li className="lightText w-[5vw] text-center hover:cursor-pointer">
+          <li className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:w-[8vw] sm:text-[10px] sm:w-[] ">
             habilidades
           </li>
-          <li className="lightText w-[5vw] text-center hover:cursor-pointer">
+          <li className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:w-[8vw] sm:text-[10px] sm:w-[] ">
             contato
           </li>
         </ul>
