@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { UserRefScroll } from "../App";
 import "../styles/sobremim.css";
 import {
   BiLogoReact,
@@ -14,6 +15,7 @@ import myP from "../assets/perfil/myP.jpg";
 
 export function SobreMim() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const { sobreMimRef } = useContext(UserRefScroll);
 
   useEffect(() => {
     const write = document.getElementById("header");
@@ -34,7 +36,10 @@ export function SobreMim() {
   }, [screenWidth]);
 
   return (
-    <div className="BgStyle relative h-[100vh] w-full z-[-1] top-[9.7vh] flex items-center bg-black">
+    <div
+      ref={sobreMimRef}
+      className="BgStyle relative h-[100vh] w-full z-[-1] top-[9.7vh] flex items-center bg-black"
+    >
       <div className="w-[57vw] h-full bg text-white flex justify-end">
         <article className="h-[60vh] max-w-[950px] flex flex-col items-center justify-center md:h-[70vh] sm:absolute sm:top-[27vh] sm:left-[50%] sm:translate-x-[-50%]">
           <h1
@@ -43,6 +48,7 @@ export function SobreMim() {
           >
             Olá, me chamo Wellinton
           </h1>
+
           <h2 className="font-mono font-bold text-[17px] p-5  w-[57vw] sm:text-[14px] sm:h-[60vh] sm:w-[60vw]">
             Desenvolvedor web front-end apaixonado por tecnologia, possuo
             experiência em desenvolvimento utilizando Javascript, React e

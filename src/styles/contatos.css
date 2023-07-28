@@ -1,0 +1,8 @@
+.ulContatos::before {
+  content: "";
+  background-color: white;
+  width: 1px;
+  position: absolute;
+  top: 100%;
+  height: 10px;
+}

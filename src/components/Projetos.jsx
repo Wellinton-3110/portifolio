@@ -29,7 +29,7 @@ export function Projetos() {
     dataFunc();
   }, []);
 
-  const { componentRef } = useContext(UserRefScroll);
+  const { peojetosRef } = useContext(UserRefScroll);
 
   var settings = {
     autoplay: false,
@@ -67,7 +67,7 @@ export function Projetos() {
   };
   return (
     <div
-      ref={componentRef}
+      ref={peojetosRef}
       className="relative scroll-smooth projetos w-full h-[100vh] bg-black"
     >
       <div className="">

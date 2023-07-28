@@ -6,7 +6,7 @@ import myLogo from "../assets/logo/myLogo.jpg";
 import "../styles/navBar.css";
 
 export function NavBar() {
-  const { scroll } = useContext(UserRefScroll);
+  const { scroll, scroll2 } = useContext(UserRefScroll);
   return (
     <>
       <nav className="fixed w-full h-[9.7vh] z-10 flex items-center text-white bg-gradient-to-b from-[#171923] to-[#1A202C] overflow-hidden border-b-[1px] border-white/40">
@@ -18,11 +18,14 @@ export function NavBar() {
           />
         </div>
         <ul className="absolute w-[35vw] max-w-[35vw] h-[5vh] flex items-center justify-around right-20 gap-5">
-          <li className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:w-[8vw] sm:text-[10px] sm:w-[12vw] ">
+          <li
+            onClick={scroll}
+            className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:w-[8vw] sm:text-[10px] sm:w-[12vw] "
+          >
             Sobre mim
           </li>
           <li
-            onClick={scroll}
+            onClick={scroll2}
             className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:w-[8vw] sm:text-[10px] sm:w-[] "
           >
             projetos

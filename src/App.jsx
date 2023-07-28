@@ -8,16 +8,20 @@ import { Contatos } from "./components/Contatos.jsx";
 export const UserRefScroll = createContext({});
 
 function App() {
-  const componentRef = useRef(null);
-  const component2Ref = useRef(null);
+  const sobreMimRef = useRef(null);
+  const peojetosRef = useRef(null);
 
   const scrollToProjetos = () => {
-    componentRef.current.scrollIntoView({ behavior: "smooth" });
+    sobreMimRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const scroll2ToProjetos = () => {
+    peojetosRef.current.scrollIntoView({ behavior: "smooth" });
   };
   const meuObj = {
-    componentRef,
-    component2Ref,
+    sobreMimRef,
+    peojetosRef,
     scroll: scrollToProjetos,
+    scroll2: scroll2ToProjetos,
   };
 
   return (
