@@ -6,7 +6,7 @@ import myLogo from "../assets/logo/myLogo.jpg";
 import "../styles/navBar.css";
 
 export function NavBar() {
-  const { scroll, scroll2 } = useContext(UserRefScroll);
+  const { scroll, scroll2, scroll3 } = useContext(UserRefScroll);
   return (
     <>
       <nav className="fixed w-full h-[9.7vh] z-10 flex items-center text-white bg-gradient-to-b from-[#171923] to-[#1A202C] overflow-hidden border-b-[1px] border-white/40">
@@ -33,8 +33,11 @@ export function NavBar() {
           <li className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:w-[8vw] sm:text-[10px] sm:w-[] ">
             habilidades
           </li>
-          <li className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:w-[8vw] sm:text-[10px] sm:w-[] ">
-            contato
+          <li
+            onClick={scroll3}
+            className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:w-[8vw] sm:text-[10px] sm:w-[] "
+          >
+            contatos
           </li>
         </ul>
       </nav>

@@ -66,12 +66,12 @@ export function Projetos() {
     ),
   };
   return (
-    <div
-      ref={peojetosRef}
-      className="relative scroll-smooth projetos w-full h-[100vh] bg-black"
-    >
+    <div className="relative scroll-smooth projetos w-full h-[100vh] bg-black">
       <div className="">
-        <h1 className="w-full p-[20px] font-bold text-center text-[white] text-[27px]">
+        <h1
+          ref={peojetosRef}
+          className="w-full p-[20px] font-bold text-center text-[white] text-[27px]"
+        >
           PROJETOS
         </h1>
 
