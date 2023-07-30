@@ -24,7 +24,7 @@ export function SobreMim() {
     newElement.forEach((element, index) => {
       setTimeout(() => {
         write.innerHTML += element;
-      }, 91 * index);
+      }, 97 * index);
     });
   }, []);
 
@@ -69,8 +69,8 @@ export function SobreMim() {
             : " relative w-[43vw] h-full text-white"
         }`}
       >
-        <div className="absolute flex h-[233px] w-[233px] z-0 right-[15vw] md:right-[10vw] top-[10vh] items-center justify-center bg-black shadow-md shadow-red-800 border-[2px] border-red-600 rounded-[50%] overflow-hidden sm:h-[155px] sm:w-[155px] sm:top-3 sm:left-[50%] sm:translate-x-[-50%] md:h-[200px] md:w-[200px] md:top-7">
-          <div ref={sobreMimRef} className="AnimateImage absolute h-[225px] w-[225px] bg-black/50 rounded-[50%] sm:h-[150px] sm:w-[150px] md:h-[195px] md:w-[195px]">
+        <div ref={sobreMimRef} className="absolute flex h-[233px] w-[233px] z-0 right-[15vw] md:right-[10vw] top-[10vh] items-center justify-center bg-black shadow-md shadow-red-800 border-[2px] border-red-600 rounded-[50%] overflow-hidden sm:h-[155px] sm:w-[155px] sm:top-3 sm:left-[50%] sm:translate-x-[-50%] md:h-[200px] md:w-[200px] md:top-7">
+          <div className="AnimateImage absolute h-[225px] w-[225px] bg-black/50 rounded-[50%] sm:h-[150px] sm:w-[150px] md:h-[195px] md:w-[195px]">
             <img
               src={myP}
               alt=""
