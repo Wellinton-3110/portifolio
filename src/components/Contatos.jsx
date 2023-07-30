@@ -46,11 +46,11 @@ export function Contatos() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <BsInstagram className="w-12 h-12 hover:w-10 hover:h-10 sm:w-10 sm:h-4 sm:hover:w-8 sm:hover:h-3  transition-all cursor-pointer  " />
+            <BsInstagram className="w-12 h-12 hover:w-10 hover:h-10 sm:w-10 sm:h-10 sm:hover:w-8 sm:hover:h-8  transition-all cursor-pointer  " />
           </a>
           <BsWhatsapp
             onClick={redirecionarParaWhatsApp}
-            className="w-12 h-12 hover:w-10 hover:h-10 sm:w-10 sm:h-4 sm:hover:w-8 sm:hover:h-3  transition-all cursor-pointer"
+            className="w-12 h-12 hover:w-10 hover:h-10 sm:w-10 sm:h-10 sm:hover:w-8 sm:hover:h-8  transition-all cursor-pointer"
           />
         </ul>
       </div>
