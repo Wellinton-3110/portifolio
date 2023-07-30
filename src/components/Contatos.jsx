@@ -41,6 +41,7 @@ export function Contatos() {
           >
             <BsLinkedin className="w-12 h-12 hover:w-10 hover:h-10 sm:w-7 sm:h-7 sm:hover:w-5 sm:hover:h-5  transition-all cursor-pointer " />
           </a>
+          
           <a
             href="https://www.instagram.com/wellinton.gsb/"
             target="_blank"
@@ -48,10 +49,13 @@ export function Contatos() {
           >
             <BsInstagram className="w-12 h-12 hover:w-10 hover:h-10  sm:w-7 sm:h-7 sm:hover:w-5 sm:hover:h-5  transition-all cursor-pointer  " />
           </a>
-          <BsWhatsapp
+          <a>
+            <BsWhatsapp
             onClick={redirecionarParaWhatsApp}
             className="w-12 h-12 hover:w-10 hover:h-10  sm:w-7 sm:h-7 sm:hover:w-5 sm:hover:h-5  transition-all cursor-pointer"
-          />
+            />
+          </a>
+      
         </ul>
       </div>
     </div>
