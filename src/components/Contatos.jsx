@@ -30,7 +30,7 @@ export function Contatos() {
         <ul
           className={`${
             showAnimation ? "ulContatos" : ""
-          } animate-pulse flex justify-center items-center gap-12 w-[65%] p-10 border-b-[1px]`}
+          } animate-pulse flex justify-center items-center gap-12 sm:gap-7 w-[65%] p-10 border-b-[1px]`}
         >
           <a href="https://github.com/Wellinton-3110" target="_blank">
             <BsGithub className="w-12 h-12 hover:w-10 hover:h-10 sm:w-7 sm:h-7 sm:hover:w-5 sm:hover:h-5  transition-all cursor-pointer " />
