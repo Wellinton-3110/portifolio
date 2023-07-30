@@ -33,24 +33,24 @@ export function Contatos() {
           } animate-pulse flex justify-center items-center gap-12 w-[65%] p-10 border-b-[1px]`}
         >
           <a href="https://github.com/Wellinton-3110" target="_blank">
-            <BsGithub className="w-12 h-12 hover:w-10 hover:h-10 sm:w-10 sm:h-10 sm:hover:w-8 sm:hover:h-8  transition-all cursor-pointer " />
+            <BsGithub className="w-12 h-12 hover:w-10 hover:h-10 sm:w-7 sm:h-7 sm:hover:w-5 sm:hover:h-5  transition-all cursor-pointer " />
           </a>
           <a
             href="https://www.linkedin.com/in/wellinton-gerson-b6aab81a9/"
             target="_blank"
           >
-            <BsLinkedin className="w-12 h-12 hover:w-10 hover:h-10 sm:w-10 sm:h-10 sm:hover:w-8 sm:hover:h-8  transition-all cursor-pointer " />
+            <BsLinkedin className="w-12 h-12 hover:w-10 hover:h-10 sm:w-7 sm:h-7 sm:hover:w-5 sm:hover:h-5  transition-all cursor-pointer " />
           </a>
           <a
             href="https://www.instagram.com/wellinton.gsb/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <BsInstagram className="w-12 h-12 hover:w-10 hover:h-10 sm:w-10 sm:h-10 sm:hover:w-8 sm:hover:h-8  transition-all cursor-pointer  " />
+            <BsInstagram className="w-12 h-12 hover:w-10 hover:h-10  sm:w-7 sm:h-7 sm:hover:w-5 sm:hover:h-5  transition-all cursor-pointer  " />
           </a>
           <BsWhatsapp
             onClick={redirecionarParaWhatsApp}
-            className="w-12 h-12 hover:w-10 hover:h-10 sm:w-10 sm:h-10 sm:hover:w-8 sm:hover:h-8  transition-all cursor-pointer"
+            className="w-12 h-12 hover:w-10 hover:h-10  sm:w-7 sm:h-7 sm:hover:w-5 sm:hover:h-5  transition-all cursor-pointer"
           />
         </ul>
       </div>
