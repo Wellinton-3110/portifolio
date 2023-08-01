@@ -11,16 +11,15 @@ export function Contatos() {
     const alturaTop = divContatos.getBoundingClientRect().top;
     const viewAltura = window.innerHeight;
     console.log(alturaTop, viewAltura);
-    if (alturaTop === viewAltura) {
+    if (alturaTop < viewAltura && !showAnimation) {
       ulContatos.classList.add("ulContatos");
+      setShowAnimation(true);
     } else {
       ulContatos.classList.remove("ulContatos");
     }
   }
   useEffect(() => {
     window.addEventListener("scroll", oii);
-
-    setShowAnimation(true);
   }, []);
   function redirecionarParaWhatsApp() {
     const numeroTelefone = "5583998871360";
@@ -45,7 +44,7 @@ export function Contatos() {
       <div className="absolute divContatos before:content-[widt:1px height:10px] flex justify-center top-[50%] lef-[50%] w-full">
         <ul
           id="ulContatos"
-          className="animate-pulse flex justify-center items-center gap-12 w-[65%] p-10 border-b-[1px]"
+          className="flex justify-center items-center gap-12 w-[50%] p-10 border-b-[1px]"
         >
           <a href="https://github.com/Wellinton-3110" target="_blank">
             <BsGithub className="w-12 h-12 hover:w-10 hover:h-10 sm:w-10 sm:h-10 sm:hover:w-8 sm:hover:h-8  transition-all cursor-pointer " />
