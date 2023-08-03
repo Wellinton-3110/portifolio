@@ -1,5 +1,6 @@
 import { BsGithub, BsLinkedin, BsInstagram, BsWhatsapp } from "react-icons/bs";
 import { useContext, useState, useEffect } from "react";
+
 import { UserRefScroll } from "../App";
 import "../styles/contatos.css";
 
@@ -8,9 +9,10 @@ export function Contatos() {
   const [showAnimation, setShowAnimation] = useState(false);
   function oii() {
     const ulContatos = document.getElementById("ulContatos");
+    const divContatos = document.getElementById("divContatos");
     const alturaTop = divContatos.getBoundingClientRect().top;
     const viewAltura = window.innerHeight;
-    console.log(alturaTop, viewAltura);
+    // console.log(alturaTop, viewAltura);
     if (alturaTop < viewAltura && !showAnimation) {
       ulContatos.classList.add("ulContatos");
       setShowAnimation(true);
@@ -21,6 +23,7 @@ export function Contatos() {
   useEffect(() => {
     window.addEventListener("scroll", oii);
   }, []);
+
   function redirecionarParaWhatsApp() {
     const numeroTelefone = "5583998871360";
 
@@ -44,7 +47,7 @@ export function Contatos() {
       <div className="absolute divContatos before:content-[widt:1px height:10px] flex justify-center top-[50%] lef-[50%] w-full">
         <ul
           id="ulContatos"
-          className="flex justify-center items-center gap-12 w-[50%] p-10 border-b-[1px]"
+          className="flex justify-center items-center gap-12 w-[55%] sm:w-[87%] p-10 border-b-[1px]"
         >
           <a href="https://github.com/Wellinton-3110" target="_blank">
             <BsGithub className="w-12 h-12 hover:w-10 hover:h-10 sm:w-10 sm:h-10 sm:hover:w-8 sm:hover:h-8  transition-all cursor-pointer " />
@@ -60,12 +63,14 @@ export function Contatos() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <BsInstagram className="w-12 h-12 hover:w-10 hover:h-10 sm:w-10 sm:h-4 sm:hover:w-8 sm:hover:h-3  transition-all cursor-pointer  " />
+            <BsInstagram className="w-12 h-12 hover:w-10 hover:h-10 sm:w-10 sm:h-10 sm:hover:w-8 sm:hover:h-8  transition-all cursor-pointer  " />
           </a>
-          <BsWhatsapp
-            onClick={redirecionarParaWhatsApp}
-            className="w-12 h-12 hover:w-10 hover:h-10 sm:w-10 sm:h-4 sm:hover:w-8 sm:hover:h-3  transition-all cursor-pointer"
-          />
+          <a href="">
+            <BsWhatsapp
+              className="w-12 h-12 hover:w-10 hover:h-10 sm:w-10 sm:h-10 sm:hover:w-8 sm:hover:h-8  transition-all cursor-pointer"
+              onClick={redirecionarParaWhatsApp}
+            />
+          </a>
         </ul>
       </div>
     </div>

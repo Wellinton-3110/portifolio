@@ -13,6 +13,7 @@ import { useState } from "react";
 
 export function Projetos() {
   const [userData, setUserData] = useState([]);
+
   useEffect(() => {
     const dataFunc = async () => {
       try {
@@ -69,6 +70,7 @@ export function Projetos() {
     <div className="relative scroll-smooth projetos w-full h-[100vh] bg-black">
       <div className="">
         <h1
+          id="elementoBaseAltura"
           ref={peojetosRef}
           className="w-full p-[20px] font-bold text-center text-[white] text-[27px]"
         >

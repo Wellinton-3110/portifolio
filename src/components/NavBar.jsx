@@ -17,25 +17,25 @@ export function NavBar() {
             alt="logo marca"
           />
         </div>
-        <ul className="absolute w-[35vw] max-w-[35vw] h-[5vh] flex items-center justify-around right-20 gap-5">
+        <ul className="absolute w-[35vw] max-w-[35vw] sm:w-[37vw] h-[5vh] flex items-center justify-around right-20 gap-5">
           <li
             onClick={scroll}
-            className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:w-[8vw] sm:text-[10px] sm:w-[12vw] "
+            className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:hover:text-[9px] md:w-[10vw] sm:min-w-[17vw] sm:text-[8px] sm:hover:text-[10px]"
           >
             Sobre mim
           </li>
           <li
             onClick={scroll2}
-            className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:w-[8vw] sm:text-[10px] sm:w-[] "
+            className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:hover:text-[9px] md:w-[10vw] sm:text-[8px] sm:hover:text-[10px] "
           >
             projetos
           </li>
-          <li className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:w-[8vw] sm:text-[10px] sm:w-[] ">
+          <li className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:hover:text-[9px] md:w-[10vw] sm:text-[8px] sm:hover:text-[10px] ">
             habilidades
           </li>
           <li
             onClick={scroll3}
-            className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:w-[8vw] sm:text-[10px] sm:w-[] "
+            className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:hover:text-[9px] md:w-[10vw] sm:text-[8px] sm:hover:text-[10px] "
           >
             contatos
           </li>
