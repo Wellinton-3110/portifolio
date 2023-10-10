@@ -1,6 +1,4 @@
 .card {
-  width: 60vw;
-  height: 80vh;
   margin: auto;
 }
 
@@ -10,7 +8,7 @@
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 2.7s;
+  transition: transform 2.3s;
 }
 
 .card:hover .flip-card {
