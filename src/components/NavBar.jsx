@@ -6,7 +6,7 @@ import myLogo from "../assets/logo/myLogo.jpg";
 import "../styles/navBar.css";
 
 export function NavBar() {
-  const { scroll, scroll2, scroll3 } = useContext(UserRefScroll);
+  const { scroll, scroll2, scroll3, scroll4 } = useContext(UserRefScroll);
   return (
     <>
       <nav className="fixed w-full h-[9.7vh] z-10 flex items-center text-white bg-gradient-to-b from-[#171923] to-[#1A202C] overflow-hidden border-b-[1px] border-white/40">
@@ -30,7 +30,10 @@ export function NavBar() {
           >
             projetos
           </li>
-          <li className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:hover:text-[9px] md:w-[10vw] sm:text-[8px] sm:hover:text-[10px] ">
+          <li
+            onClick={scroll4}
+            className="lightText w-[5vw] text-center hover:cursor-pointer md:text-[11px] md:hover:text-[9px] md:w-[10vw] sm:text-[8px] sm:hover:text-[10px] "
+          >
             habilidades
           </li>
           <li

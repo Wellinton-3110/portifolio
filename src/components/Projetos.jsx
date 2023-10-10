@@ -1,6 +1,6 @@
 import Slider from "react-slick";
-import { useContext, useEffect } from "react";
-import { UserRefScroll } from "../App";
+import { useState, useEffect } from "react";
+import { useScroll } from "../hooks/useScroll";
 import { Card } from "./Card";
 import video from "../assets/projetos/pexels_videos_4562 (1080p).mp4";
 
@@ -9,7 +9,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/projetos.css";
 import axios from "axios";
-import { useState } from "react";
 
 export function Projetos() {
   const [userData, setUserData] = useState([]);
@@ -30,7 +29,7 @@ export function Projetos() {
     dataFunc();
   }, []);
 
-  const { peojetosRef } = useContext(UserRefScroll);
+  const { peojetosRef } = useScroll();
 
   var settings = {
     autoplay: false,
@@ -74,7 +73,7 @@ export function Projetos() {
           ref={peojetosRef}
           className="w-full p-[20px] font-bold text-center text-[white] text-[27px]"
         >
-          PROJETOS
+          Projetos
         </h1>
 
         <Slider
@@ -84,7 +83,10 @@ export function Projetos() {
           {userData.map((items, index) => {
             if (items) {
               return (
-                <div className="Projetos relative flex p-10 w-[77vw] h-[80vh]">
+                <div
+                  key={index}
+                  className="Projetos relative flex p-10 w-[77vw] h-[80vh]"
+                >
                   <Card
                     name={items.name}
                     text={items.description}
